@@ -21,6 +21,7 @@ namespace Simple_Inventory_Management_System
                 userInterface.AddProduct(product);
             }
 
+            userInterface.ListProducts();
 
         }
     }

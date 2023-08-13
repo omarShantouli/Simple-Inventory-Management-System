@@ -14,6 +14,14 @@ namespace Simple_Inventory_Management_System
         {
             inventory.AddProduct(product); 
         }
+        public void ListProducts()
+        {
+            foreach (var product in inventory.GetProducts())
+            {
+                Console.WriteLine($"{product.Name}  {product.Price}  {product.QuantityInStock}");
+            }
+        }
+
 
 
     }

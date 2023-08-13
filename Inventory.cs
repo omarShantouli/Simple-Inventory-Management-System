@@ -14,8 +14,11 @@ namespace Simple_Inventory_Management_System
         {
             products.Add(product);
         }
+        public List<Product> GetProducts()
+        {
+            return products;
+        }
 
-     
 
     }
 }
