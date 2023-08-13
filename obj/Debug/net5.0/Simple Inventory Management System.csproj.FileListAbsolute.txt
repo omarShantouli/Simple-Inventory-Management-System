@@ -1,0 +1,16 @@
+D:\vs\Simple Inventory Management System\bin\Debug\net5.0\Simple Inventory Management System.exe
+D:\vs\Simple Inventory Management System\bin\Debug\net5.0\Simple Inventory Management System.deps.json
+D:\vs\Simple Inventory Management System\bin\Debug\net5.0\Simple Inventory Management System.runtimeconfig.json
+D:\vs\Simple Inventory Management System\bin\Debug\net5.0\Simple Inventory Management System.runtimeconfig.dev.json
+D:\vs\Simple Inventory Management System\bin\Debug\net5.0\Simple Inventory Management System.dll
+D:\vs\Simple Inventory Management System\bin\Debug\net5.0\Simple Inventory Management System.pdb
+D:\vs\Simple Inventory Management System\obj\Debug\net5.0\Simple Inventory Management System.csproj.AssemblyReference.cache
+D:\vs\Simple Inventory Management System\obj\Debug\net5.0\Simple Inventory Management System.GeneratedMSBuildEditorConfig.editorconfig
+D:\vs\Simple Inventory Management System\obj\Debug\net5.0\Simple Inventory Management System.AssemblyInfoInputs.cache
+D:\vs\Simple Inventory Management System\obj\Debug\net5.0\Simple Inventory Management System.AssemblyInfo.cs
+D:\vs\Simple Inventory Management System\obj\Debug\net5.0\Simple Inventory Management System.csproj.CoreCompileInputs.cache
+D:\vs\Simple Inventory Management System\obj\Debug\net5.0\Simple Inventory Management System.dll
+D:\vs\Simple Inventory Management System\obj\Debug\net5.0\refint\Simple Inventory Management System.dll
+D:\vs\Simple Inventory Management System\obj\Debug\net5.0\Simple Inventory Management System.pdb
+D:\vs\Simple Inventory Management System\obj\Debug\net5.0\Simple Inventory Management System.genruntimeconfig.cache
+D:\vs\Simple Inventory Management System\obj\Debug\net5.0\ref\Simple Inventory Management System.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Simple Inventory Management System/1.0.0": {
+        "runtime": {
+          "Simple Inventory Management System.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Simple Inventory Management System/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
