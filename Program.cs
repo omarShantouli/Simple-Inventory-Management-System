@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Simple_Inventory_Management_System
 {
@@ -21,8 +22,58 @@ namespace Simple_Inventory_Management_System
                 userInterface.AddProduct(product);
             }
 
-            userInterface.ListProducts();
+            int choice;
 
+            while (true)
+            { 
+                Console.WriteLine("Simple Inventory Management System");
+                Console.WriteLine("1. Add Product");
+                Console.WriteLine("2. Remove Product");
+                Console.WriteLine("3. Update Product");
+                Console.WriteLine("4. List Products");
+                Console.WriteLine("5. Exit");
+
+                choice = Convert.ToInt32(Console.ReadLine());
+
+                if(choice == 1) 
+                {
+                    Console.Write("Enter product name: ");
+                    string name = Console.ReadLine();
+
+                    Console.Write("Enter product price: ");
+                    decimal price = Convert.ToDecimal(Console.ReadLine());
+
+                    Console.Write("Enter product quantity in stock: ");
+                    int quantity = Convert.ToInt32(Console.ReadLine());
+
+                    userInterface.AddProduct(new Product(name, price, quantity));
+
+                }
+
+                else if(choice == 2) 
+                {
+
+                }
+
+                else if(choice == 3) 
+                {
+                    Console.Write("Enter product name: ");
+                    string name = Console.ReadLine();
+                    userInterface.EditProduct(name);
+      
+                }
+
+                else if (choice == 4) 
+                {
+                    userInterface.ListProducts();
+                }
+
+                else
+                {
+                    break;
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
