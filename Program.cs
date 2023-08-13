@@ -28,7 +28,7 @@ namespace Simple_Inventory_Management_System
             { 
                 Console.WriteLine("Simple Inventory Management System");
                 Console.WriteLine("1. Add Product");
-                Console.WriteLine("2. Remove Product");
+                Console.WriteLine("2. Delete Product");
                 Console.WriteLine("3. Update Product");
                 Console.WriteLine("4. List Products");
                 Console.WriteLine("5. Exit");
@@ -52,7 +52,9 @@ namespace Simple_Inventory_Management_System
 
                 else if(choice == 2) 
                 {
-
+                    Console.Write("Enter product name: ");
+                    string name = Console.ReadLine();
+                    userInterface.DeleteProduct(name);
                 }
 
                 else if(choice == 3) 

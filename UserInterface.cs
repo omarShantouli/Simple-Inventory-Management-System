@@ -50,6 +50,42 @@ namespace Simple_Inventory_Management_System
 
         }
 
+        public void DeleteProduct(string productName)
+        {
+            List<Product> products = inventory.GetProducts();
+            for (int i = 0; i < products.Count; i++)
+            {
+                if (products[i].Name.ToLower() == productName.ToLower())
+                {
+                    Console.WriteLine($"The product you want to delete is :" +
+                        $" {products[i].Name} {products[i].Price} {products[i].QuantityInStock}");
+                    string ok;
+                    while (true)
+                    {
+                        Console.WriteLine("Are you sure to delete this product? (y/n)");
+                        ok = Console.ReadLine();
+                        if(ok == "y")
+                        {
+                            inventory.products.RemoveAt(i);
+                            Console.WriteLine("Product is deleted successfully!");
+                            return;
+                        }
+                        else if(ok == "n")
+                        {
+                            Console.WriteLine("Product is not deleted!");
+                            return;
+                        }
+
+                    }
+                    
+
+                }
+            }
+            
+            Console.WriteLine("Your product is not exist");
+
+        }
+
 
     }
 }

@@ -8,7 +8,7 @@ namespace Simple_Inventory_Management_System
 {
     internal class Inventory
     {
-        private List<Product> products = new List<Product>();
+        public List<Product> products = new List<Product>();
 
         public void AddProduct(Product product)
         {
