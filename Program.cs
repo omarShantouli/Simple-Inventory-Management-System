@@ -14,6 +14,7 @@ namespace Simple_Inventory_Management_System
                 new Product("Air Conditioner", 3200, 270),
                 new Product("Electric Blender", 150, 180),
                 new Product("Fan", 180, 310)
+
             };
 
             UserInterface userInterface= new UserInterface();
