@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Diagnostics;
+using System.IO;
 
 namespace Simple_Inventory_Management_System
 {
@@ -8,15 +10,8 @@ namespace Simple_Inventory_Management_System
     {
         static void Main(string[] args)
         {
-            List<Product> products = new List<Product>()
-            {
-                new Product("Smart TV", 1500, 100),
-                new Product("Air Conditioner", 3200, 270),
-                new Product("Electric Blender", 150, 180),
-                new Product("Fan", 180, 310)
-
-            };
-
+            List<Product> products = ProductsDatabase.GetAllProductsFromDatabase();
+            Console.WriteLine(products.Count);
             UserInterface userInterface= new UserInterface();
             foreach(Product product in products)
             {
@@ -47,8 +42,9 @@ namespace Simple_Inventory_Management_System
                     Console.Write("Enter product quantity in stock: ");
                     int quantity = Convert.ToInt32(Console.ReadLine());
 
-                    userInterface.AddProduct(new Product(name, price, quantity));
-
+                    Product product = new Product(name, price, quantity);
+                    userInterface.AddProduct(product);
+                    ProductsDatabase.AddProductToDatabase(product);
                 }
 
                 else if(choice == 2) 
@@ -56,6 +52,7 @@ namespace Simple_Inventory_Management_System
                     Console.Write("Enter product name: ");
                     string name = Console.ReadLine();
                     userInterface.DeleteProduct(name);
+
                 }
 
                 else if(choice == 3) 
@@ -78,5 +75,7 @@ namespace Simple_Inventory_Management_System
                 Console.WriteLine();
             }
         }
+        
+        
     }
 }

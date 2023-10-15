@@ -14,3 +14,10 @@ D:\vs\Simple Inventory Management System\obj\Debug\net5.0\refint\Simple Inventor
 D:\vs\Simple Inventory Management System\obj\Debug\net5.0\Simple Inventory Management System.pdb
 D:\vs\Simple Inventory Management System\obj\Debug\net5.0\Simple Inventory Management System.genruntimeconfig.cache
 D:\vs\Simple Inventory Management System\obj\Debug\net5.0\ref\Simple Inventory Management System.dll
+D:\vs\Simple Inventory Management System\bin\Debug\net5.0\System.Data.SqlClient.dll
+D:\vs\Simple Inventory Management System\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+D:\vs\Simple Inventory Management System\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+D:\vs\Simple Inventory Management System\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+D:\vs\Simple Inventory Management System\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\vs\Simple Inventory Management System\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\vs\Simple Inventory Management System\obj\Debug\net5.0\Simple Inventory Management System.csproj.CopyComplete

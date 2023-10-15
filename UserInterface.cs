@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Common;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Simple_Inventory_Management_System
 {
@@ -13,7 +10,7 @@ namespace Simple_Inventory_Management_System
 
         public void AddProduct(Product product) 
         {
-            inventory.AddProduct(product); 
+            inventory.AddProduct(product);
         }
         public void ListProducts()
         {
@@ -25,6 +22,7 @@ namespace Simple_Inventory_Management_System
 
         public void EditProduct(string productName)
         {
+          
             foreach(var product in inventory.GetProducts())
             {
                 if(product.Name.ToLower() == productName.ToLower())
@@ -41,12 +39,13 @@ namespace Simple_Inventory_Management_System
                     Console.WriteLine("Enter a new quantity in stock:");
                     product.QuantityInStock = Convert.ToInt32(Console.ReadLine());
 
+                    ProductsDatabase.UpdateProduct(productName, product);
                     Console.WriteLine("Edited successfully");
                     return;
 
                 }
             }
-            Console.WriteLine("Your product is not exist");
+            Console.WriteLine("Your product is not exist!");
 
         }
 
@@ -55,6 +54,7 @@ namespace Simple_Inventory_Management_System
             List<Product> products = inventory.GetProducts();
             for (int i = 0; i < products.Count; i++)
             {
+                //Console.WriteLine(products[i].Name.ToLower().Equals(productName.ToLower()));
                 if (products[i].Name.ToLower() == productName.ToLower())
                 {
                     Console.WriteLine($"The product you want to delete is :" +
@@ -67,6 +67,7 @@ namespace Simple_Inventory_Management_System
                         if(ok == "y")
                         {
                             inventory.products.RemoveAt(i);
+                            ProductsDatabase.DeleteProduct(productName);
                             Console.WriteLine("Product is deleted successfully!");
                             return;
                         }
@@ -77,8 +78,6 @@ namespace Simple_Inventory_Management_System
                         }
 
                     }
-                    
-
                 }
             }
             

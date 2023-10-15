@@ -6,4 +6,8 @@
     <RootNamespace>Simple_Inventory_Management_System</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
 </Project>
